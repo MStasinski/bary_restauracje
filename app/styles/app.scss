@@ -1,0 +1,41 @@
+@import 'bootstrap';
+@import url(https://fonts.googleapis.com/css?family=Oswald:300);
+
+img-responsive {
+  max-width:100% !important;
+  height:auto;
+  display:block;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+.text-center {
+  text-align: center;
+}
+
+
+body {
+  padding-top: 20px;
+    font-family: 'Oswald', sans-serif !important;
+	
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.library-item {
+  min-height: 100px;
+}
+
+
+.navbar {
+    background-color: rgba(33,52,56,.80) !important;
+    
+}
+.custom-class label {
+  background: #34495e;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
