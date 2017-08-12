@@ -1,9 +1,9 @@
 <h2>Edytuj</h2>
 
 <div class="form-horizontal">
-  
- <div class="form-group">
-    <label class="col-sm-2 control-label">id</label>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Pozycja</label>
     <div class="col-sm-10">
       {{input type="text" value=model.rank class="form-control" placeholder="wpisz id"}}
     </div>
@@ -18,16 +18,60 @@
   </div>
 
   <div class="form-group">
-    <label class="col-sm-2 control-label">Cena</label>
+    <label class="col-sm-2 control-label">mala</label>
     <div class="col-sm-10">
-      {{input type="text" value=model.price class="form-control" placeholder="wpisz cenę"}}
+      {{input type="number" value=model.price0 class="form-control" placeholder="wpisz cenę pizzy"}}
     </div>
   </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">średnia</label>
+    <div class="col-sm-10">
+      {{input type="number" value=model.price1 class="form-control" placeholder="wpisz cenę pizzy"}}
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">duża</label>
+    <div class="col-sm-10">
+      {{input type="number" value=model.price2 class="form-control" placeholder="wpisz cenę pizzy"}}
+    </div>
+  </div>
+{{!--
+  <div class="form-group">
+    <label class="col-sm-2 control-label">cena</label>
+    <div class="col-sm-10">
+      {{input type="number" value=model.price3 class="form-control" placeholder="wpisz cenę pizzy"}}
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Cena 5</label>
+    <div class="col-sm-10">
+      {{input type="text" value=model.price4 class="form-control" placeholder="wpisz cenę pizzy"}}
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Cena 6</label>
+    <div class="col-sm-10">
+      {{input type="text" value=model.price5 class="form-control" placeholder="wpisz cenę pizzy"}}
+    </div>
+  </div>--}}
+
 
   <div class="form-group">
     <label class="col-sm-2 control-label">opis</label>
     <div class="col-sm-10">
       {{input type="text" value=model.desc class="form-control" placeholder="wpisz opis"}}
+    </div>
+  </div>
+
+<div class="form-group">
+    <label class="col-sm-2 control-label">Wyprzedana</label>
+    <div class="col-sm-10">
+      {{input type="checkbox" checked=model.sold class="toggle"}}
+
     </div>
   </div>
 
