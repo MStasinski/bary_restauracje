@@ -24,19 +24,16 @@
       </div>
       <div class="panel-body">
 
-        {{#if pracownik.manager}}
-        <h4>KIEROWNIK</h4>
-        {{/if}} 
-        
-        {{#if pracownik.driver}}
-        <h4>DOSTAWCA</h4>
+
+        {{#if pracownik.allowPost}}
+        <h4>pracownik może wysyłać posty</h4>
+        {{/if}} {{#if pracownik.allowNotyfication}}
+        <h4>pracownik może wysyłać powiadomienia</h4>
+        {{/if}} {{#if pracownik.allowOrders}}
+        <h4>pracownik ma dostęp do zamówień</h4>
+        {{/if}} {{#if pracownik.allowDriver}}
+        <h4>pracownik pełni rolę kierowcy</h4>
         {{/if}}
-
-        {{#if pracownik.notAllowOrders}}
-        <h4>brak dostępu do zamówień</h4>
-        {{/if}}
-
-
 
       </div>
 

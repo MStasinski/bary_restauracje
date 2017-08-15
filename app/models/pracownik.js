@@ -7,9 +7,11 @@ export default DS.Model.extend({
   phone: DS.attr('number'),
   email: DS.attr('string'),
   password: DS.attr('string'),
-  driver: DS.attr('boolean'),
-  manager: DS.attr('boolean'),
-  notAllowOrders: DS.attr('boolean'),
+ 
+  allowDriver: DS.attr('boolean'),
+  allowOrders: DS.attr('boolean'),
+  allowPost: DS.attr('boolean'),
+  allowNotyfication: DS.attr('boolean')
 
 
 });
